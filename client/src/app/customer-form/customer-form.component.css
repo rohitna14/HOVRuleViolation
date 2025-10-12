@@ -1,0 +1,141 @@
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #f5f7fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #555;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 0.5rem;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.reset-btn {
+  background-color: #6c757d;
+}
+
+.notify-btn {
+  margin-top: 1rem;
+  background-color: #28a745;
+}
+
+.loading {
+  text-align: center;
+  margin: 1rem 0;
+  color: #007bff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #007bff;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.weight-hint {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.result-box {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.violation {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.success {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.final-msg {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.customer-info {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.notification-group {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notification-group select {
+  width: 100%;
+  padding: 0.5rem;
+}
